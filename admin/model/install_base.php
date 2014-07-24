@@ -67,4 +67,3 @@
 		$wpdb->query($sql_hugeit_lightbox);
 	}
 ?>
-

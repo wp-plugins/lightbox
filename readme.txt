@@ -4,7 +4,7 @@ Donate link: http://huge-it.com/lightbox/
 Tags: lightbox, Lightbox slider, popup, lightview, overlay, popup, popup image, popup images, colorbox, lightbox popup, lightbox pop, on click popup, onclick popup, popup box, style, style lightbox,
 Requires at least: 3.0.1
 Tested up to: 3.9.1
-Stable tag: 1.3.0
+Stable tag: 1.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,6 +33,9 @@ Now you can set your lightbox options, images and use our lightbox.
     
 
 == Changelog ==
+
+= 1.3.1 =
+*  Bug fixed in Lightbox.
 
 ==Wordpress Lightbox step by step guide==
 

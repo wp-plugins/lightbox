@@ -3,7 +3,7 @@
 Plugin Name: Lightbox
 Plugin URI: http://huge-it.com
 Description: Lightbox is the perfect tool for viewing photos.
-Version: 1.3.0
+Version: 1.3.1
 Author: Huge-IT
 Author URI: http://huge-it.com
 License: GPL
@@ -93,7 +93,7 @@ function huge_lightbox_header()
 	var lightbox_title = <?php echo $paramssld['light_box_title'];?>;
 	var lightbox_scalePhotos = <?php echo $paramssld['light_box_scalephotos'];?>;
 	var lightbox_scrolling = <?php echo $paramssld['light_box_scrolling'];?>;
-	var lightbox_opacity = <?php echo $paramssld['light_box_opacity'];?>;
+	var lightbox_opacity = <?php echo $paramssld['light_box_opacity']/100;?>;
 	var lightbox_open = <?php echo $paramssld['light_box_open'];?>;
 	var lightbox_returnFocus = <?php echo $paramssld['light_box_returnfocus'];?>;
 	var lightbox_trapFocus = <?php echo $paramssld['light_box_trapfocus'];?>;
