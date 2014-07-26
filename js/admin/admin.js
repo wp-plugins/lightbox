@@ -22,4 +22,13 @@ jQuery(document).ready(function () {
 		 $(this).parent().find('span').html(parseInt(data.value)+"%");
 		 $(this).val(parseInt(data.value));
 	});	
+	
+	
+	jQuery('#view-style-block ul li[data-id="'+jQuery('#light_box_style option[selected="selected"]').val()+'"]').addClass('active');
+	
+	jQuery('#light_box_style').change(function(){
+		var strtr = jQuery(this).val();
+		jQuery('#view-style-block ul li').removeClass('active');
+		jQuery('#view-style-block ul li[data-id="'+strtr+'"]').addClass('active');
+	});
 });

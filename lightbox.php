@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: Lightbox
-Plugin URI: http://huge-it.com
+Plugin Name: lightbox
+Plugin URI: http://huge-it.com/lightbox
 Description: Lightbox is the perfect tool for viewing photos.
-Version: 1.3.1
+Version: 1.3.2
 Author: Huge-IT
 Author URI: http://huge-it.com
 License: GPL
@@ -15,10 +15,13 @@ define('HUGEIT_PLUGIN_DIR', WP_PLUGIN_DIR . "/" . plugin_basename(dirname(__FILE
 
 function huge_it_lightbox_options_panel()
 {
-     $page_option = add_menu_page('Theme page title', 'Lightbox Settings', 'manage_options', 'huge_it_light_box', 'Options_light_box_styles', plugins_url('images/huge_it_lightboxLogoHover-for_menu.png', __FILE__));
-    add_submenu_page('huge_it_light_box', 'Licensing', 'Licensing', 'manage_options', 'huge_it_lightbox_Licensing', 'huge_it_lightbox_Licensing');
+     $page_option = add_menu_page('Theme page title', 'Huge IT Lightbox', 'manage_options', 'huge_it_light_box', 'Options_light_box_styles', plugins_url('images/huge_it_lightboxLogoHover-for_menu.png', __FILE__));
+    //$page_design = add_submenu_page('huge_it_light_box', 'Design customization', 'Design customization', 'manage_options', 'huge_it_design_customization', 'huge_it_design_customization');
+	add_submenu_page('huge_it_light_box', 'Licensing', 'Licensing', 'manage_options', 'huge_it_lightbox_Licensing', 'huge_it_lightbox_Licensing');
+    add_submenu_page('huge_it_light_box', 'Featured Plugins', 'Featured Plugins', 'manage_options', 'huge_it_featured_plugins', 'huge_it_featured_plugins');
 	
 	add_action('admin_print_styles-' . $page_option, 'huge_it_lightbox_option_admin_script');
+	//add_action('admin_print_styles-' . $page_design, 'huge_it_lightbox_option_admin_script');
 }
 function huge_it_lightbox_Licensing(){
 
@@ -42,10 +45,9 @@ Purchasing a license will add possibility to customize the general options of th
 <?php
 	}
 
-
 function huge_it_lightbox_option_admin_script()
 {
-		wp_enqueue_script("jquery_old", "http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js", FALSE);
+	wp_enqueue_script("jquery_old", "http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js", FALSE);
 
 	wp_enqueue_script("simple_slider_js",  plugins_url("js/admin/simple-slider.js", __FILE__), FALSE);
 	wp_enqueue_style("simple_slider_css", plugins_url("css/admin/simple-slider.css", __FILE__), FALSE);
@@ -55,6 +57,16 @@ function huge_it_lightbox_option_admin_script()
 	wp_enqueue_script('param_block2', plugins_url("js/admin/jscolor/jscolor.js", __FILE__));
 }
 
+function huge_it_design_customization()
+{
+	switch ($_GET['task']) {
+	default:
+		include_once("admin/controller/huge_it_design_customization.php");
+		$controller = new Controller();
+		$controller->invoke();
+		break;
+	}
+}
 function Options_light_box_styles()
 {
 	switch ($_GET['task']) {
@@ -62,6 +74,14 @@ function Options_light_box_styles()
 		include_once("admin/controller/huge_it_light_box.php");
 		$controller = new Controller();
 		$controller->invoke();
+		break;
+	}
+}
+function huge_it_featured_plugins()
+{
+	switch ($_GET['task']) {
+	default:
+		include_once("admin/controller/huge_it_featured_plugins.php");
 		break;
 	}
 }
@@ -224,7 +244,15 @@ function huge_lightbox_header()
 		plugins_url( '/js/frontend/jquery.colorbox.js' , __FILE__ ),
 		array( 'jquery' )
 	);
-	wp_enqueue_style( 'style-name',plugins_url( '/css/frontend/colorbox-'.$paramssld['light_box_style'].'.css' , __FILE__ ) );	
+	if($paramssld['light_box_style'] != 6){
+	wp_enqueue_style( 'style-name',plugins_url( '/css/frontend/colorbox-'.$paramssld['light_box_style'].'.css' , __FILE__ ) );
+	}
+	else
+	{
+	?><style><?php
+	include_once('/css/frontend/colorbox-'.$paramssld['light_box_style'].'.css.php');
+	?></style><?php
+	}
 }
 
 add_action('wp_head', 'huge_lightbox_header');

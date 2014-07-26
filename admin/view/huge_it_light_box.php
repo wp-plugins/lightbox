@@ -17,7 +17,7 @@
 	<a class="save-lightbox-options button-primary">Save</a>		
 </div>
 <div id="lightbox-options-list">
-	<form action="admin.php?page=huge_it_light_box" method="post" id="adminForm" name="adminForm">
+	<form action="admin.php?page=huge_it_light_box&hugeit_task=save" method="post" id="adminForm" name="adminForm">
 	<div class="options-block">	
 		<h3>Internationalization</h3>
 			<div class="has-background">
@@ -29,6 +29,15 @@
 					<option <?php if($hugeit_lightbox_values['light_box_style'] == '4'){ echo 'selected="selected"'; } ?> value="4">4</option>
 					<option <?php if($hugeit_lightbox_values['light_box_style'] == '5'){ echo 'selected="selected"'; } ?> value="5">5</option>
 				</select>
+				<div id="view-style-block">
+					<ul>
+						<li data-id="1" class="active"><img src="<?php echo plugins_url('../../images/view1.jpg', __FILE__); ?>"></li>
+						<li data-id="2"><img src="<?php echo plugins_url('../../images/view2.jpg', __FILE__); ?>"></li>
+						<li data-id="3"><img src="<?php echo plugins_url('../../images/view3.jpg', __FILE__); ?>"></li>
+						<li data-id="4"><img src="<?php echo plugins_url('../../images/view4.jpg', __FILE__); ?>"></li>
+						<li data-id="5"><img src="<?php echo plugins_url('../../images/view5.jpg', __FILE__); ?>"></li>
+					</ul>
+				</div>
 			</div>
 			<div>
 				<label for="light_box_transition">Transition type</label>
@@ -297,6 +306,6 @@
 	</div>
 	</form>
 </div>
-<div class="post-body-line">
-	<a class="save-lightbox-options button-primary">Save</a>		
+<div id="post-body-heading" class="post-body-line">
+	<a onclick="" class="save-lightbox-options button-primary">Save</a>		
 </div>
