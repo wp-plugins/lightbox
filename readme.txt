@@ -34,68 +34,80 @@ Now you can set your lightbox options, images and use our lightbox.
 
 == Changelog ==
 
+= 1.3.2 =
+*  Add some options in Lightbox.
+
 = 1.3.1 =
 *  Bug fixed in Lightbox.
 
-==Wordpress Lightbox step by step guide==
+==Step 1. Adding a Lightbox==
 
-Lightbox style. choose the style of your popup.
+To add a lightbox in your website you just need to install lightbox plugin and its done.
 
-Transition type. Set the way of opening the popup
+### Step 2. Inserting Created Lightbox
 
-Opening speed. Set the speed of opening the popup in milliseconds
+You don’t need to insert shortcode or something else in your page or post. After you install the Huge-IT Lightbox it will work automatically when you click on ‘content images’.
 
-Closing speed. Set the speed of closing the popup in milliseconds
+### Step 3. General Options of Lightbox
 
-Show the title. Choose whether to display the content title
+This section will allow making changesof the Lightbox’s settings. Most of the view options allow styling and color options.
 
-Overlay transparency. Change the level of popup background transparency
 
-Auto open. Choose for automatically opening the firs content after reloading
 
-Overlay close. Choose to close the content by clicking on the overlay
+*  Lightbox style. choose the style of your popup.
 
-ESC close. Choose to close the content with esc button
+*  Transition type. Set the way of opening the popup.
 
-Keyboard navigation. Set to change the images with left and right buttons
+*  Opening speed. Set the speed of opening the popup in milliseconds.
 
-Loop content. If “true” give the ability to move from the last image to the first image while 
+*  Closing speed. Set the speed of closing the popup in milliseconds.
 
-navigation
+*  Show the title. Choose whether to display the content title.
 
-Show close button. Choose whether to display close button 
+*  Overlay transparency. Change the level of popup background transparency.
 
-Previous button text. Change the content of next button text 
+*  Auto open. Choose for automatically opening the firs content after reloading.
 
-Next button text. Change the content of next button text
+*  Overlay close. Choose to close the content by clicking on the overlay.
 
-Close button text. Change the content of close button text
+*  ESC close. Choose to close the content with esc button.
 
-Popup size fix. Choose to fix the popup width and high
+*  Keyboard navigation. Set to change the images with left and right buttons.
 
-Popup high. Change the high of content 
+*  Loop content. If “true” give the ability to move from the last image to the first image while navigation.
 
-Popup width. Change the width of content
+*  Show close button. Choose whether to display close button.
 
-Popup max width Set unfix content max width
+*  Previous button text. Change the content of next button text.
 
-Popup max high Set unfix max high
+*  Next button text. Change the content of next button text.
 
-Popup initial high Set the initial high of opening
+*  Close button text. Change the content of close button text.
 
-Popup initial width. Set the initial size of opening 
+*  Popup size fix. Choose to fix the popup width and high.
 
-Slideshow. Select to enable slideshow
+*  Popup high. Change the high of content.
 
-Slideshow interval. Set the time between each slide
+*  Popup width. Change the width of content.
 
-Slide show auto start. If “true” it works automatically
+*  Popup max width Set unfix content max width.
 
-Slideshow start button text. Set the text on start button
+*  Popup max high Set unfix max high.
 
-Slideshow stop button text. Set the text of stop button
+*  Popup initial high Set the initial high of opening.
 
-Fix position. If “true” the popup does not change it’s position while scrolling up or down
+*  Popup initial width. Set the initial size of opening.
 
-Popup position. Set the position of popup
+*  Slideshow. Select to enable slideshow.
 
+*  Slideshow interval. Set the time between each slide.
+
+*  Slide show auto start. If “true” it works automatically.
+
+*  Slideshow start button text. Set the text on start button.
+
+*  Slideshow stop button text. Set the text of stop button.
+
+*  Fix position. If “true” the popup does not change it’s position while scrolling up or down.
+
+*  Popup position. Set the position of popup.
