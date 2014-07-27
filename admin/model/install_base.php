@@ -8,7 +8,7 @@
 		PRIMARY KEY (`id`)
 	) ENGINE=MyISAM  DEFAULT CHARSET=utf8;";
 	$wpdb->query($hugeit_lightbox);
-	$sql_hugeit_lightbox = "INSERT INTO `wp_hugeit_lightbox` (`name`, `title`, `value`) VALUES	
+	$sql_hugeit_lightbox = "INSERT INTO " . $wpdb->prefix . "hugeit_lightbox (`name`, `title`, `value`) VALUES	
 	('light_box_size', 'Light box size', '17'),
 	('light_box_width', 'Light Box width', '500'),
 	('light_box_transition', 'Light Box Transition', 'elastic'),
