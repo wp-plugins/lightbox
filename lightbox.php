@@ -3,7 +3,7 @@
 Plugin Name: lightbox
 Plugin URI: http://huge-it.com/lightbox
 Description: Lightbox is the perfect tool for viewing photos.
-Version: 1.3.2
+Version: 1.3.3
 Author: Huge-IT
 Author URI: http://huge-it.com
 License: GPL
@@ -113,7 +113,7 @@ function huge_lightbox_header()
 	var lightbox_title = <?php echo $paramssld['light_box_title'];?>;
 	var lightbox_scalePhotos = <?php echo $paramssld['light_box_scalephotos'];?>;
 	var lightbox_scrolling = <?php echo $paramssld['light_box_scrolling'];?>;
-	var lightbox_opacity = <?php echo $paramssld['light_box_opacity']/100;?>;
+	var lightbox_opacity = <?php echo ($paramssld['light_box_opacity']/100)+0.001;?>;
 	var lightbox_open = <?php echo $paramssld['light_box_open'];?>;
 	var lightbox_returnFocus = <?php echo $paramssld['light_box_returnfocus'];?>;
 	var lightbox_trapFocus = <?php echo $paramssld['light_box_trapfocus'];?>;
@@ -129,14 +129,14 @@ function huge_lightbox_header()
 	var lightbox_close = "<?php echo $paramssld['light_box_close'];?>";
 	var lightbox_html = <?php echo $paramssld['light_box_html'];?>;
 	var lightbox_photo = <?php echo $paramssld['light_box_photo'];?>;
-	var lightbox_width = '<?php echo $paramssld['light_box_width'];?>';
-	var lightbox_height = '<?php echo $paramssld['lightbox_height'];?>';
+	var lightbox_width = '<?php if($paramssld['light_box_size_fix'] == 'false'){ echo 'false';} else { echo $paramssld['light_box_width']; } ?>';
+	var lightbox_height = '<?php if($paramssld['light_box_size_fix'] == 'false'){ echo 'false';} else { echo $paramssld['lightbox_height']; } ?>';
 	var lightbox_innerWidth = '<?php echo $paramssld['light_box_innerwidth'];?>';
 	var lightbox_innerHeight = '<?php echo $paramssld['light_box_innerheight'];?>';
 	var lightbox_initialWidth = '<?php echo $paramssld['light_box_initialwidth'];?>';
 	var lightbox_initialHeight = '<?php echo $paramssld['light_box_initialheight'];?>';
-	var lightbox_maxWidth = <?php echo $paramssld['light_box_maxwidth'];?>;
-	var lightbox_maxHeight = <?php echo $paramssld['light_box_maxheight'];?>;
+	var lightbox_maxWidth = <?php if($paramssld['light_box_size_fix'] == 'true'){ echo 'false';} else { echo $paramssld['light_box_maxwidth']; } ?>;
+	var lightbox_maxHeight = <?php if($paramssld['light_box_size_fix'] == 'true'){ echo 'false';} else { echo $paramssld['light_box_maxheight']; } ?>;
 	var lightbox_slideshow = <?php echo $paramssld['light_box_slideshow'];?>;
 	var lightbox_slideshowSpeed = <?php echo $paramssld['light_box_slideshowspeed'];?>;
 	var lightbox_slideshowAuto = <?php echo $paramssld['light_box_slideshowauto'];?>;

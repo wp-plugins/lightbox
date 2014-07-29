@@ -245,7 +245,8 @@
 		</div>
 		<div class="has-background">
 			<label for="light_box_slideshowauto">Slideshow auto start</label>
-			<input type="text" name="params[light_box_slideshowauto]" id="light_box_slideshowauto" value="<?php echo $hugeit_lightbox_values[light_box_slideshowauto]; ?>" class="text">
+			<input type="hidden" value="false" name="params[light_box_slideshowauto]" />
+			<input type="checkbox" id="light_box_slideshowauto"  <?php if($hugeit_lightbox_values['light_box_slideshowauto']  == 'true'){ echo 'checked="checked"'; } ?>  name="params[light_box_slideshowauto]" value="true" />
 		</div>
 		<div>
 			<label for="light_box_slideshowstart">Slideshow start button text</label>

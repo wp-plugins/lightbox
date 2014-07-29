@@ -66,4 +66,17 @@
 	if (!$wpdb->get_var("select count(*) from " . $wpdb->prefix . "hugeit_lightbox")) {
 		$wpdb->query($sql_hugeit_lightbox);
 	}
+		///////////////////////////update////////////////////////////////////
+    $table_name = $wpdb->prefix . "hugeit_lightbox";
+	$sql_update_p1 = <<<query1
+	INSERT INTO `$table_name` (`name`, `title`, `value`) VALUES
+	('light_box_size_fix', 'Light Box size fix', 'false');
+
+query1;
+
+	$query="SELECT name FROM ".$wpdb->prefix."hugeit_lightbox";
+	$update_p1=$wpdb->get_results($query);
+	if(end($update_p1)->name=='light_box_style'){
+		$wpdb->query($sql_update_p1);
+	}
 ?>

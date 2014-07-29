@@ -3,15 +3,18 @@ jQuery(document).ready(function () {
 		alert("Lightbox Settings are disabled in free version. If you need those functionalityes, you need to buy the commercial version.");
 		return false;
 	});
-	jQuery('#light_box_size_fix').change(function(){
-		jQuery(this).val()
-		if(jQuery(this).is(':checked')){
-			jQuery('.options-block .not-fixed-size').css({'display':'none'});
-			jQuery('.options-block .fixed-size').css({'display':'block'});
-		}else {
-			jQuery('.options-block .fixed-size').css({'display':'none'});
-			jQuery('.options-block .not-fixed-size').css({'display':'block'});
+	popupsizes(jQuery('#light_box_size_fix'));
+	function popupsizes(checkbox){
+			if(checkbox.is(':checked')){
+				jQuery('.options-block .not-fixed-size').css({'display':'none'});
+				jQuery('.options-block .fixed-size').css({'display':'block'});
+			}else {
+				jQuery('.options-block .fixed-size').css({'display':'none'});
+				jQuery('.options-block .not-fixed-size').css({'display':'block'});
+			}
 		}
+	jQuery('#light_box_size_fix').change(function(){
+		popupsizes(jQuery(this));
 	});
 	jQuery('#arrows-type input[name="params[slider_navigation_type]"]').change(function(){
 		jQuery(this).parents('ul').find('li.active').removeClass('active');
