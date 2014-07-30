@@ -12,7 +12,7 @@ Lightbox is the perfect tool for viewing photos.
 
 == Description ==
 
-Lightbox is the perfect tool for viewing photos. It is created specially for simplification of using, permits you to view larger version of images 
+Lightbox is a perfect tool for viewing photos. It is created especially for simplification of using, permits you to view larger version of images 
 and giving an interesting design. With the help of slideshow and various styles, betray a unique image to your website
 
 ### If you think, that you found a bug in our [WordPress Lightbox](http://huge-it.com/lightbox) plugin or have any question contact us at [info@huge-it.com](mailto:info@huge-it.com).
@@ -53,7 +53,7 @@ You don’t need to insert shortcode or something else in your page or post. Aft
 
 ### Step 3. General Options of Lightbox
 
-This section will allow making changesof the Lightbox’s settings. Most of the view options allow styling and color options.
+This section will allow to make changes of the Lightbox’s settings. Most of the view options allow styling and multi coloring.
 
 
 
