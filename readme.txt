@@ -1,7 +1,7 @@
 === Lightbox ===
 Contributors: Huge-IT
 Donate link: http://huge-it.com/lightbox/
-Tags: lightbox, Lightbox slider, popup, lightview, overlay, popup, popup image, popup images, colorbox, lightbox popup, lightbox pop, on click popup, onclick popup, popup box, style, style lightbox, wordpress image lightbox, wordpress lightbox, wordpress popup, popup photo, photo,
+Tags: lightbox, Lightbox slider, popup, lightview, overlay, popup, popup image, popup images, colorbox, lightbox popup, lightbox pop, on click popup, onclick popup, popup box, style, style lightbox, wordpress image lightbox, wordpress lightbox, wordpress popup, popup photo, photo, shadowbox,
 Requires at least: 3.0.1
 Tested up to: 3.9.1
 Stable tag: 1.3.3
