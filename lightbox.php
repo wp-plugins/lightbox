@@ -3,7 +3,7 @@
 Plugin Name: lightbox
 Plugin URI: http://huge-it.com/lightbox
 Description: Lightbox is the perfect tool for viewing photos.
-Version: 1.3.3
+Version: 1.3.4
 Author: Huge-IT
 Author URI: http://huge-it.com
 License: GPL
@@ -130,7 +130,7 @@ function huge_lightbox_header()
 	var lightbox_html = <?php echo $paramssld['light_box_html'];?>;
 	var lightbox_photo = <?php echo $paramssld['light_box_photo'];?>;
 	var lightbox_width = '<?php if($paramssld['light_box_size_fix'] == 'false'){ echo 'false';} else { echo $paramssld['light_box_width']; } ?>';
-	var lightbox_height = '<?php if($paramssld['light_box_size_fix'] == 'false'){ echo 'false';} else { echo $paramssld['lightbox_height']; } ?>';
+	var lightbox_height = '<?php if($paramssld['light_box_size_fix'] == 'false'){ echo 'false';} else { echo $paramssld['light_box_height']; } ?>';
 	var lightbox_innerWidth = '<?php echo $paramssld['light_box_innerwidth'];?>';
 	var lightbox_innerHeight = '<?php echo $paramssld['light_box_innerheight'];?>';
 	var lightbox_initialWidth = '<?php echo $paramssld['light_box_initialwidth'];?>';
@@ -256,4 +256,11 @@ function huge_lightbox_header()
 }
 
 add_action('wp_head', 'huge_lightbox_header');
+function add_title_attachment_link($link, $id = null) {
+$id = intval( $id );
+$_post = get_post( $id );
+$post_title = esc_attr( $_post->post_title );
+return str_replace('<a href', '<a title="'. $post_title .'" href', $link);
+}
+add_filter('wp_get_attachment_link', 'add_title_attachment_link', 10, 2);
 ?>
