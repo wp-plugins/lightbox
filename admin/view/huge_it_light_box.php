@@ -1,5 +1,5 @@
 <?php $hugeit_lightbox_values = $this->model->getlightboxList(); ?>
-	<?php $path_site2 = plugins_url("../../images", __FILE__); ?>
+<?php $path_site2 = plugins_url("../../images", __FILE__); ?>
 	<div class="slider-options-head">
 		<div style="float: left;">
 			<div><a href="http://huge-it.com/wordpress-plugins-lightbox-user-manual/" target="_blank">User Manual</a></div>
@@ -13,11 +13,11 @@
 		</div>
 	</div>
 <div id="post-body-heading" class="post-body-line">
-	<h3>Lightbox Options</h3>
+	<h3>General Options</h3>
 	<a class="save-lightbox-options button-primary">Save</a>		
 </div>
 <div id="lightbox-options-list">
-	<form action="admin.php?page=huge_it_light_box&hugeit_task=save" method="post" id="adminForm" name="adminForm">
+	<form action="admin.php?page=huge_it_light_box" method="post" id="adminForm" name="adminForm">
 	<div class="options-block">	
 		<h3>Internationalization</h3>
 			<div class="has-background">
@@ -308,5 +308,5 @@
 	</form>
 </div>
 <div id="post-body-heading" class="post-body-line">
-	<a onclick="" class="save-lightbox-options button-primary">Save</a>		
+	<a class="save-lightbox-options button-primary">Save</a>		
 </div>

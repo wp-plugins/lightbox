@@ -1,10 +1,10 @@
 === Lightbox ===
 Contributors: Huge-IT
 Donate link: http://huge-it.com/lightbox/
-Tags: lightbox, Lightbox slider, popup, lightview, overlay, popup, popup image, popup images, colorbox, lightbox popup, lightbox pop, on click popup, onclick popup, popup box, style, style lightbox, wordpress image lightbox, wordpress lightbox, wordpress popup, popup photo, photo, shadowbox, img, image, thickbox, open image,
+Tags: lightbox, Lightbox slider, popup, lightview, overlay, popup, popup image, popup images, colorbox, lightbox popup, lightbox pop, on click popup, onclick popup, popup box, style, style lightbox, wordpress image lightbox, wordpress lightbox, wordpress popup, popup photo, photo, shadowbox, img, image, thickbox, open image, video lightbox,
 Requires at least: 3.0.1
 Tested up to: 3.9.1
-Stable tag: 1.3.4
+Stable tag: 1.3.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,8 +12,7 @@ Lightbox is the perfect tool for viewing photos.
 
 == Description ==
 
-Lightbox is a perfect tool for viewing photos. It is created especially for simplification of using, permits you to view larger version of images 
-and giving an interesting design. With the help of slideshow and various styles, betray a unique image to your website
+Lightbox is a perfect tool for viewing photos and videos. It is created especially for simplification of using, permits you to view larger version of images and videos and giving an interesting design. The video link can be from two sources, it is Vimeo and YouTube.  With the help of slideshow and various styles, betray a unique image to your website.
 
 ### If you think, that you found a bug in our [WordPress Lightbox](http://huge-it.com/lightbox) plugin or have any question contact us at [info@huge-it.com](mailto:info@huge-it.com).
 
@@ -33,6 +32,9 @@ Now you can set your lightbox options, images and use our lightbox.
     
 
 == Changelog ==
+
+= 1.3.5 =
+*  Added youtube and vimeo lightbox.
 
 = 1.3.4 =
 *  Bug fixed in Lightbox.
@@ -54,7 +56,12 @@ To add a lightbox in your website you just need to install lightbox plugin and i
 
 You don’t need to insert shortcode or something else in your page or post. After you install the Huge-IT Lightbox it will work automatically when you click on ‘content images’.
 
-### Step 3. General Options of Lightbox
+### Step 3 Use Both images and Videos in Lightbox.
+
+Except images you also can insert youtube or vimeo link to show your videos in lightbox.
+In your post click -insert media and -insert from URL. add the link, give a title or image to click and open the video.
+
+### Step 4. General Options of Lightbox
 
 This section will allow to make changes of the Lightbox’s settings. Most of the view options allow styling and multi coloring.
 

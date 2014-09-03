@@ -16,6 +16,7 @@ jQuery(document).ready(function () {
 	jQuery('#light_box_size_fix').change(function(){
 		popupsizes(jQuery(this));
 	});
+	
 	jQuery('#arrows-type input[name="params[slider_navigation_type]"]').change(function(){
 		jQuery(this).parents('ul').find('li.active').removeClass('active');
 		jQuery(this).parents('li').addClass('active');

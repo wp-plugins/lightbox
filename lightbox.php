@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: lightbox
+Plugin Name: Huge IT lightbox
 Plugin URI: http://huge-it.com/lightbox
 Description: Lightbox is the perfect tool for viewing photos.
-Version: 1.3.4
+Version: 1.3.5
 Author: Huge-IT
 Author URI: http://huge-it.com
 License: GPL
@@ -15,14 +15,16 @@ define('HUGEIT_PLUGIN_DIR', WP_PLUGIN_DIR . "/" . plugin_basename(dirname(__FILE
 
 function huge_it_lightbox_options_panel()
 {
-     $page_option = add_menu_page('Theme page title', 'Huge IT Lightbox', 'manage_options', 'huge_it_light_box', 'Options_light_box_styles', plugins_url('images/huge_it_lightboxLogoHover-for_menu.png', __FILE__));
-    //$page_design = add_submenu_page('huge_it_light_box', 'Design customization', 'Design customization', 'manage_options', 'huge_it_design_customization', 'huge_it_design_customization');
-	add_submenu_page('huge_it_light_box', 'Licensing', 'Licensing', 'manage_options', 'huge_it_lightbox_Licensing', 'huge_it_lightbox_Licensing');
+    add_menu_page('Theme page title', 'Huge IT Lightbox', 'manage_options', 'huge_it_light_box', 'huge_it_light_box', plugins_url('images/huge_it_lightboxLogoHover-for_menu.png', __FILE__));
+	$page_option = add_submenu_page('huge_it_light_box', 'Lightbox', 'Lightbox', 'manage_options', 'huge_it_light_box', 'huge_it_light_box');
     add_submenu_page('huge_it_light_box', 'Featured Plugins', 'Featured Plugins', 'manage_options', 'huge_it_featured_plugins', 'huge_it_featured_plugins');
+	add_submenu_page('huge_it_light_box', 'Licensing', 'Licensing', 'manage_options', 'huge_it_lightbox_Licensing', 'huge_it_lightbox_Licensing');
 	
 	add_action('admin_print_styles-' . $page_option, 'huge_it_lightbox_option_admin_script');
-	//add_action('admin_print_styles-' . $page_design, 'huge_it_lightbox_option_admin_script');
+	add_action('admin_print_styles-' . $page_option, 'huge_it_lightbox_option_admin_script');
+
 }
+
 function huge_it_lightbox_Licensing(){
 
 	?>
@@ -67,7 +69,7 @@ function huge_it_design_customization()
 		break;
 	}
 }
-function Options_light_box_styles()
+function huge_it_light_box()
 {
 	switch ($_GET['task']) {
 	default:
@@ -129,8 +131,8 @@ function huge_lightbox_header()
 	var lightbox_close = "<?php echo $paramssld['light_box_close'];?>";
 	var lightbox_html = <?php echo $paramssld['light_box_html'];?>;
 	var lightbox_photo = <?php echo $paramssld['light_box_photo'];?>;
-	var lightbox_width = '<?php if($paramssld['light_box_size_fix'] == 'false'){ echo 'false';} else { echo $paramssld['light_box_width']; } ?>';
-	var lightbox_height = '<?php if($paramssld['light_box_size_fix'] == 'false'){ echo 'false';} else { echo $paramssld['light_box_height']; } ?>';
+	var lightbox_width = '<?php if($paramssld['light_box_size_fix'] == 'false'){ echo '';} else { echo $paramssld['light_box_width']; } ?>';
+	var lightbox_height = '<?php if($paramssld['light_box_size_fix'] == 'false'){ echo '';} else { echo $paramssld['light_box_height']; } ?>';
 	var lightbox_innerWidth = '<?php echo $paramssld['light_box_innerwidth'];?>';
 	var lightbox_innerHeight = '<?php echo $paramssld['light_box_innerheight'];?>';
 	var lightbox_initialWidth = '<?php echo $paramssld['light_box_initialwidth'];?>';
@@ -143,6 +145,8 @@ function huge_lightbox_header()
 	var lightbox_slideshowStart = "<?php echo $paramssld['light_box_slideshowstart'];?>";
 	var lightbox_slideshowStop = "<?php echo $paramssld['light_box_slideshowstop'];?>";
 	var lightbox_fixed = <?php echo $paramssld['light_box_fixed'];?>;
+	
+	
 	<?php
 	$pos = $paramssld['slider_title_position'];
 	switch($pos){ 
