@@ -1,4 +1,8 @@
 jQuery(document).ready(function () {
+		jQuery('.save-lightbox-options').click(function(){
+		alert("Lightbox Settings are disabled in free version. If you need those functionalityes, you need to buy the commercial version.");
+		return false;
+	});
 	popupsizes(jQuery('#light_box_size_fix'));
 	function popupsizes(checkbox){
 			if(checkbox.is(':checked')){

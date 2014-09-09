@@ -1,11 +1,24 @@
 <?php $hugeit_lightbox_values = $this->model->getlightboxList(); ?>
-<link rel="stylesheet" type="text/css" media="all" href="http://localhost/lightbox/wp-content/plugins/lightbox/css/admin/admin.style.css" />
+<?php $path_site2 = plugins_url("../../images", __FILE__); ?>
+	<div class="slider-options-head">
+		<div style="float: left;">
+			<div><a href="http://huge-it.com/wordpress-plugins-lightbox-user-manual/" target="_blank">User Manual</a></div>
+			<div>This section allows you to configure the Lightbox options. <a href="http://huge-it.com/wordpress-plugins-lightbox-user-manual/" target="_blank">More...</a></div>
+		</div>
+		<div style="float: right;">
+			<a class="header-logo-text" href="http://huge-it.com/lightbox" target="_blank">
+				<div><img width="250px" src="<?php echo $path_site2; ?>/huge-it1.png" /></div>
+				<div>Get the full version</div>
+			</a>
+		</div>
+	</div>
+	<div style="clear: both;"></div>
 <div id="post-body-heading" class="post-body-line">
 	<h3>General Options</h3>
-	<a onclick="document.getElementById('adminForm').submit()" class="save-lightbox-options button-primary">Save</a>		
+	<a class="save-lightbox-options button-primary">Save</a>		
 </div>
 <div id="lightbox-options-list">
-	<form action="admin.php?page=huge_it_light_box&hugeit_task=save" method="post" id="adminForm" name="adminForm">
+	<form action="admin.php?page=huge_it_light_box" method="post" id="adminForm" name="adminForm">
 	<div class="options-block">	
 		<h3>Internationalization</h3>
 			<div class="has-background">
@@ -478,5 +491,5 @@
 	</form>
 </div>
 <div id="post-body-heading" class="post-body-line">
-	<a onclick="document.getElementById('adminForm').submit()" class="save-lightbox-options button-primary">Save</a>		
+	<a class="save-lightbox-options button-primary">Save</a>		
 </div>
