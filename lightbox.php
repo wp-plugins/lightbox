@@ -3,7 +3,7 @@
 Plugin Name: Huge IT lightbox
 Plugin URI: http://huge-it.com/lightbox
 Description: Lightbox is the perfect tool for viewing photos.
-Version: 1.3.9
+Version: 1.4.0
 Author: Huge-IT
 Author URI: http://huge-it.com
 License: GPL
@@ -71,13 +71,9 @@ function huge_it_design_customization()
 }
 function huge_it_light_box()
 {
-	switch ($_GET['task']) {
-	default:
 		include_once("admin/controller/huge_it_light_box.php");
 		$controller = new Controller();
 		$controller->invoke();
-		break;
-	}
 }
 function huge_it_featured_plugins()
 {
