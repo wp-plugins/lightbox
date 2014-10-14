@@ -3,7 +3,7 @@
 Plugin Name: Huge IT lightbox
 Plugin URI: http://huge-it.com/lightbox
 Description: Lightbox is the perfect tool for viewing photos.
-Version: 1.4.0
+Version: 1.4.1
 Author: Huge-IT
 Author URI: http://huge-it.com
 License: GPL
@@ -256,11 +256,11 @@ function huge_lightbox_header()
 }
 
 add_action('wp_head', 'huge_lightbox_header');
-function add_title_attachment_link($link, $id = null) {
+function add_title_lightbox_link($link, $id = null) {
 $id = intval( $id );
 $_post = get_post( $id );
 $post_title = esc_attr( $_post->post_title );
 return str_replace('<a href', '<a title="'. $post_title .'" href', $link);
 }
-add_filter('wp_get_attachment_link', 'add_title_attachment_link', 10, 2);
+add_filter('wp_get_attachment_link', 'add_title_lightbox_link', 10, 2);
 ?>
