@@ -3,7 +3,7 @@
 Plugin Name: Huge IT lightbox
 Plugin URI: http://huge-it.com/lightbox
 Description: Lightbox is the perfect tool for viewing photos.
-Version: 1.4.2
+Version: 1.4.3
 Author: Huge-IT
 Author URI: http://huge-it.com
 License: GPL
@@ -133,9 +133,13 @@ function huge_lightbox_header()
 	var lightbox_innerHeight = '<?php echo $paramssld['light_box_innerheight'];?>';
 	var lightbox_initialWidth = '<?php echo $paramssld['light_box_initialwidth'];?>';
 	var lightbox_initialHeight = '<?php echo $paramssld['light_box_initialheight'];?>';
-	var lightbox_maxWidth = <?php if($paramssld['light_box_size_fix'] == 'true'){ echo 'false';} else { echo $paramssld['light_box_maxwidth']; } ?>;
-	var lightbox_maxHeight = <?php if($paramssld['light_box_size_fix'] == 'true'){ echo 'false';} else { echo $paramssld['light_box_maxheight']; } ?>;
-	var lightbox_slideshow = <?php echo $paramssld['light_box_slideshow'];?>;
+	
+        var maxwidth=jQuery(window).width();
+        if(maxwidth><?php echo $paramssld['light_box_maxwidth'];?>){maxwidth=<?php echo $paramssld['light_box_maxwidth'];?>;}
+        var lightbox_maxWidth = <?php if($paramssld['light_box_size_fix'] == 'true'){ echo '"100%"';} else { echo 'maxwidth'; } ?>;
+        var lightbox_maxHeight = <?php if($paramssld['light_box_size_fix'] == 'true'){ echo '"100%"';} else { echo $paramssld['light_box_maxheight']; } ?>;
+	
+        var lightbox_slideshow = <?php echo $paramssld['light_box_slideshow'];?>;
 	var lightbox_slideshowSpeed = <?php echo $paramssld['light_box_slideshowspeed'];?>;
 	var lightbox_slideshowAuto = <?php echo $paramssld['light_box_slideshowauto'];?>;
 	var lightbox_slideshowStart = "<?php echo $paramssld['light_box_slideshowstart'];?>";
