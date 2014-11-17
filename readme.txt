@@ -35,6 +35,8 @@ Now you can set your lightbox options, images and use our lightbox.
 
 == Screenshots ==
     
+1.  WordPress Lightbox - Demo image
+2.  WordPress Lightbox - Demo video
 
 == Changelog ==
 
