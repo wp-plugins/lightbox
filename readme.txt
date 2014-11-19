@@ -14,9 +14,6 @@ Lightbox is the perfect tool for viewing photos.
 
 Huge-IT Lightbox is a perfect tool for viewing photos and videos. It is created especially for simplification of using, permits you to view larger version of images and videos and giving an interesting design. The video link can be from two sources, it is Vimeo and YouTube. With the help of slideshow and various styles, betray a unique image to your website. It is very easy in use. All you have to do is install the plugin and it will automaticly work. We have created it specially to make the process of using in the most simple way, so that even your child could manage it. The plugin gives the ability to:
 
-* Change it’s form, color, size.
-* Set one from wonderful 5 views, that you can change and see from General Options. No matter what style you choose it will show your images and videos in it’s best way.
-* Change the position of Lightbox and also the style of its’ opening.
 * So that, it will satisfy the most original taste of our users. Give new breath to you images and video - install and try it. 
 
 ### If you think, that you found a bug in our [WordPress Lightbox](http://huge-it.com/lightbox) plugin or have any question contact us at [info@huge-it.com](mailto:info@huge-it.com).
