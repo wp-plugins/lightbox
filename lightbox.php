@@ -3,7 +3,7 @@
 Plugin Name: Huge IT lightbox
 Plugin URI: http://huge-it.com/lightbox
 Description: Lightbox is the perfect tool for viewing photos.
-Version: 1.4.3
+Version: 1.4.4
 Author: Huge-IT
 Author URI: http://huge-it.com
 License: GPL
@@ -31,8 +31,7 @@ function huge_it_lightbox_Licensing(){
     <div style="width:95%">
     <p>
 	This plugin is the non-commercial version of the Huge IT Lightbox. If you want to customize to the styles and colors of your website,than you need to buy a license.
-Purchasing a license will add possibility to customize the general options of the Huge IT Lightbox. 
-
+	Purchasing a license will add possibility to customize the general options of the Huge IT Lightbox.
  </p>
 <br /><br />
 <a href="http://huge-it.com/lightbox/" class="button-primary" target="_blank">Purchase a License</a>
@@ -53,7 +52,6 @@ function huge_it_lightbox_option_admin_script()
 
 	wp_enqueue_script("simple_slider_js",  plugins_url("js/admin/simple-slider.js", __FILE__), FALSE);
 	wp_enqueue_style("simple_slider_css", plugins_url("css/admin/simple-slider.css", __FILE__), FALSE);
-	
 	wp_enqueue_style("admin_css", plugins_url("css/admin/admin.style.css", __FILE__), FALSE);
 	wp_enqueue_script("admin_js", plugins_url("js/admin/admin.js", __FILE__), FALSE);
 	wp_enqueue_script('param_block2', plugins_url("js/admin/jscolor/jscolor.js", __FILE__));
