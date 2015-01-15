@@ -15,11 +15,11 @@
 	<div style="clear: both;"></div>
 <div id="post-body-heading" class="post-body-line">
 	<h3>General Options</h3>
-	<a class="save-lightbox-options button-primary">Save</a>		
+	<a onclick="document.getElementById('adminForm').submit()" class="save-lightbox-options button-primary">Save</a>		
 </div>
 <div id="lightbox-options-list">
-	<form action="admin.php?page=huge_it_light_box" method="post" id="adminForm" name="adminForm">
-	<div class="options-block">	
+	<form action="admin.php?page=huge_it_light_box&hugeit_task=save" method="post" id="adminForm" name="adminForm">
+	<div class="options-block first-block">	
 		<h3>Internationalization</h3>
 			<div class="has-background">
                             <label for="light_box_style">Lightbox style
@@ -30,7 +30,7 @@
                                         </div>
                                     </div>
                                 </label>
-				<select id="light_box_style" name="params[light_box_style]">	
+				<select id="light_box_style" name="light_box_style">	
 					<option <?php if($hugeit_lightbox_values['light_box_style'] == '1'){ echo 'selected="selected"'; } ?> value="1">1</option>
 					<option <?php if($hugeit_lightbox_values['light_box_style'] == '2'){ echo 'selected="selected"'; } ?> value="2">2</option>
 					<option <?php if($hugeit_lightbox_values['light_box_style'] == '3'){ echo 'selected="selected"'; } ?> value="3">3</option>
@@ -57,7 +57,7 @@
                                         </div>
                                     </div>
                                 </label>
-				<select id="light_box_transition" name="params[light_box_transition]">	
+				<select id="light_box_transition" name="light_box_transition">	
 					<option <?php if($hugeit_lightbox_values['light_box_transition'] == 'elastic'){ echo 'selected="selected"'; } ?> value="elastic">Elastic</option>
 					<option <?php if($hugeit_lightbox_values['light_box_transition'] == 'fade'){ echo 'selected="selected"'; } ?> value="fade">Fade</option>
 					<option <?php if($hugeit_lightbox_values['light_box_transition'] == 'none'){ echo 'selected="selected"'; } ?> value="none">none</option>
@@ -72,7 +72,7 @@
                                         </div>
                                     </div>
                                 </label>
-				<input type="number" name="params[light_box_speed]" id="light_box_speed" value="<?php echo $hugeit_lightbox_values[light_box_speed]; ?>" class="text">
+				<input type="number" name="light_box_speed" id="light_box_speed" value="<?php echo $hugeit_lightbox_values[light_box_speed]; ?>" class="text">
 				<span>ms</span>
 			</div>
 			<div>
@@ -84,7 +84,7 @@
                                         </div>
                                     </div>
                                 </label>
-				<input type="number" name="params[light_box_fadeout]" id="light_box_fadeout" value="<?php echo $hugeit_lightbox_values[light_box_fadeout]; ?>" class="text">
+				<input type="number" name="light_box_fadeout" id="light_box_fadeout" value="<?php echo $hugeit_lightbox_values[light_box_fadeout]; ?>" class="text">
 				<span>ms</span>
 			</div>
 			<!-- <div class="has-background">
@@ -101,8 +101,8 @@
                                         </div>
                                     </div>
                                 </label>
-				<input type="hidden" value="false" name="params[light_box_title]" />
-				<input type="checkbox" id="light_box_title"  <?php if($hugeit_lightbox_values['light_box_title']  == 'true'){ echo 'checked="checked"'; } ?>  name="params[light_box_title]" value="true" />
+				<input type="hidden" value="false" name="light_box_title" />
+				<input type="checkbox" id="light_box_title"  <?php if($hugeit_lightbox_values['light_box_title']  == 'true'){ echo 'checked="checked"'; } ?>  name="light_box_title" value="true" />
 			</div>
 			<!-- <div class="has-background">
 				<label for="light_box_rel">Light box Rel<span class="help"></span></label>
@@ -123,7 +123,8 @@
 					<option <?php if($hugeit_lightbox_values['light_box_scrolling'] == 'false'){ echo 'selected="selected"'; } ?> value="false">False</option>
 				</select>
 			</div>-->
-			<div>
+			<h3><span class="for-pro-user"><strong> (Pro)</strong></span></h3>
+			<div class="options-small-blocks">
                                 <label for="light_box_opacity">Overlay transparency
                                     <div class="help">?
                                         <div class="help-block">
@@ -137,7 +138,7 @@
 					<span><?php echo $hugeit_lightbox_values['light_box_opacity']; ?>%</span>
 				</div>
 			</div>
-			<div class="has-background">
+			<div class="has-background options-small-blocks">
                                 <label for="light_box_open">Auto open
                                     <div class="help">?
                                         <div class="help-block">
@@ -177,7 +178,7 @@
 					<option <?php if($hugeit_lightbox_values['light_box_preloading'] == 'false'){ echo 'selected="selected"'; } ?> value="false">False</option>
 				</select>
 			</div>-->
-			<div>
+			<div class="options-small-blocks">
                                 <label for="light_box_overlayclose">Overlay close
                                     <div class="help">?
                                         <div class="help-block">
@@ -189,7 +190,7 @@
 				<input type="hidden" value="false" name="params[light_box_overlayclose]" />
 				<input type="checkbox" id="light_box_overlayclose"  <?php if($hugeit_lightbox_values['light_box_overlayclose']  == 'true'){ echo 'checked="checked"'; } ?>  name="params[light_box_overlayclose]" value="true" />
 			</div>
-			<div class="has-background">
+			<div class="has-background options-small-blocks">
                             <label for="light_box_esckey">EscKey close
                                     <div class="help">?
                                         <div class="help-block">
@@ -201,7 +202,7 @@
 				<input type="hidden" value="false" name="params[light_box_esckey]" />
 				<input type="checkbox" id="light_box_esckey"  <?php if($hugeit_lightbox_values['light_box_esckey']  == 'true'){ echo 'checked="checked"'; } ?>  name="params[light_box_esckey]" value="true" />
 			</div>
-			<div>
+			<div class="options-small-blocks">
                                 <label for="light_box_arrowkey">Keyboard navigation
                                     <div class="help">?
                                         <div class="help-block">
@@ -213,7 +214,7 @@
 				<input type="hidden" value="false" name="params[light_box_arrowkey]" />
 				<input type="checkbox" id="light_box_arrowkey"  <?php if($hugeit_lightbox_values['light_box_arrowkey']  == 'true'){ echo 'checked="checked"'; } ?>  name="params[light_box_arrowkey]" value="true" />
 			</div>
-			<div class="has-background">
+			<div class="has-background options-small-blocks">
                                 <label for="light_box_loop">Loop content
                                     <div class="help">?
                                         <div class="help-block">
@@ -234,7 +235,7 @@
 				<input type="text" name="params[light_box_classname]" id="light_box_classname" value="<?php echo $hugeit_lightbox_values[light_box_classname]; ?>" class="text">
 				<span>px</span>
 			</div> -->
-			<div>
+			<div class="options-small-blocks">
                                 <label for="light_box_closebutton">Show close button
                                     <div class="help">?
                                         <div class="help-block">
@@ -263,8 +264,8 @@
 		</div>
 	</div>
 	-->
-	<div class="options-block">
-		<h3>Dimensions</h3>
+	<div class="options-block alert-for-free">
+		<h3>Dimensions<span class="for-pro-user"><strong> (Pro)</strong></span></h3>
 		
 		<div class="has-background">
                         <label for="light_box_size_fix">Popup size fix
@@ -364,8 +365,8 @@
 			<span>px</span>
 		</div>
 	</div>
-	<div class="options-block">
-		<h3>Slideshow</h3>
+	<div class="options-block alert-for-free">
+		<h3>Slideshow<span class="for-pro-user"><strong> (Pro)</strong></span></h3>
 		
 		<div class="has-background">
                         <label for="light_box_slideshow">Slideshow
@@ -426,8 +427,8 @@
 			<input type="text" name="params[light_box_slideshowstop]" id="light_box_slideshowstop" value="<?php echo $hugeit_lightbox_values[light_box_slideshowstop]; ?>" class="text">
 		</div>
 	</div>
-	<div class="options-block" style="margin-top:0px;">
-		<h3>Positioning</h3>
+	<div class="options-block alert-for-free" style="margin-top:0px;">
+		<h3>Positioning<span class="for-pro-user"><strong> (Pro)</strong></span></h3>
 		
 		<div class="has-background">
                         <label for="light_box_fixed">Fixed position

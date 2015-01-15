@@ -1,5 +1,9 @@
 jQuery(document).ready(function () {
-		jQuery('.save-lightbox-options').click(function(){
+	jQuery('.for-pro-user').click(function(){
+		alert("Lightbox Settings are disabled in free version. If you need those functionalityes, you need to buy the commercial version.");
+		return false;
+	});
+	jQuery('.alert-for-free').click(function(){
 		alert("Lightbox Settings are disabled in free version. If you need those functionalityes, you need to buy the commercial version.");
 		return false;
 	});

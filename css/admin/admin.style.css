@@ -18,6 +18,14 @@
 	margin-right:20px !important;
 }
 
+.options-block, .options-small-blocks {
+	opacity: 0.6;
+}
+
+.first-block {
+	opacity: 1;
+}
+
 .post-body-line .button.add-post-slide input {
 	position:absolute;
 	display:none;
@@ -82,6 +90,10 @@
     border: 1px solid #1e8cbe;
     border-radius: 20px;
     text-indent: 7px;
+}
+
+.for-pro-user {
+	color: #FF0000;
 }
 
 .options-block  > div  .help-block {

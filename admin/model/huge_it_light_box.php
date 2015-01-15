@@ -13,5 +13,19 @@ class Model {
 		}
 		return $hugeit_lightbox_values;
 	}
+	public function getlightboxSave()
+	{
+		global $wpdb;
+		if (isset($_POST['params'])) {
+			$wpdb->query($wpdb->prepare("UPDATE ".$wpdb->prefix."hugeit_lightbox SET value = '%s' WHERE name = 'light_box_style'", $_POST["light_box_style"]));
+			$wpdb->query($wpdb->prepare("UPDATE ".$wpdb->prefix."hugeit_lightbox SET value = '%s' WHERE name = 'light_box_transition'", $_POST["light_box_transition"]));
+			$wpdb->query($wpdb->prepare("UPDATE ".$wpdb->prefix."hugeit_lightbox SET value = '%s' WHERE name = 'light_box_speed'", $_POST["light_box_speed"]));
+			$wpdb->query($wpdb->prepare("UPDATE ".$wpdb->prefix."hugeit_lightbox SET value = '%s' WHERE name = 'light_box_fadeout'", $_POST["light_box_fadeout"]));
+			$wpdb->query($wpdb->prepare("UPDATE ".$wpdb->prefix."hugeit_lightbox SET value = '%s' WHERE name = 'light_box_title'", $_POST["light_box_title"]));
+		?>
+		<div class="updated"><p><strong><?php _e('Item Saved'); ?></strong></p></div>
+		<?php
+		}
+	}
 }
 ?>
