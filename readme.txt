@@ -14,6 +14,7 @@ Lightbox is the perfect tool for viewing photos.
 
 ### Wordpress Lightbox
 
+* [Wordpress Lightbox](http://huge-it.com/lightbox/)
 * [Demo Wordpress Lightbox](http://huge-it.com/wordpress-plugins-lightbox-demo/)
 * [Demo Wordpress Lightbox Admin](http://huge-it.com/wordpress-plugins-lightbox-demo-admin/)
 * [User Wordpress Lightbox Manual](http://huge-it.com/wordpress-plugins-lightbox-user-manual/)
