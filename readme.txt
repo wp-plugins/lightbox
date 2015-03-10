@@ -4,7 +4,7 @@ Donate link: http://huge-it.com/lightbox/
 Tags: lightbox, Lightbox slider, lightview, overlay, popup, popup image, popup images, colorbox, lightbox popup, lightbox pop, on click popup, onclick popup, popup box, style, style lightbox, fancybox, wordpress image lightbox, wordpress lightbox, wordpress popup, popup photo, photo, shadowbox, img, image, thickbox, open image, video lightbox, page, post, vimeo, youtube, wordpress youtube, free, highslide, popups, images, video, responsive lightbox, WP Lightbox, pop-up, light box, imag, pics, exit lightbox, full page popup, modal, lightbox youtube, lightbox photo, image popup, Jquery lightbox, jquery popup, video popup, optin popup, prettyphoto lightbox, quick popup, slimbox, simple popup, custom popup, slideshow lightbox, Responsive Popup, popup, popup lightbox, popup video, popup window,
 Requires at least: 3.0.1
 Tested up to: 4.1
-Stable tag: 1.4.5
+Stable tag: 1.4.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -91,6 +91,9 @@ In order it could work there too, you should.
 ### If you think, that you found a bug in our [WordPress Lightbox](http://huge-it.com/lightbox/) plugin or have any question contact us at [info@huge-it.com](mailto:info@huge-it.com).
 
 == Changelog ==
+
+= 1.4.6 =
+*  Bug fixed in Lightbox.
 
 = 1.4.5 =
 *  New options are available.
