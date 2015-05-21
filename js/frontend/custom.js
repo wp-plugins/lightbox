@@ -34,7 +34,7 @@ jQuery(document).ready(function(){
 		onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
 	});
 
-	jQuery('.non-retina').colorbox({rel:'group5', transition:'none'})
+	jQuery('.non-retina').colorbox({rel:'group5', transition:'none'});
 	jQuery('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
 	
 

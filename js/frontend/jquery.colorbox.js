@@ -1058,7 +1058,7 @@
 				
 				setTimeout(function () {
 					closing = false;
-					trigger(event_closed);
+					//trigger(event_closed);
 					settings.get('onClosed');
 				}, 1);
 			});
