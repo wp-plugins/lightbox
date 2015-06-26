@@ -6,7 +6,9 @@ jQuery(document).ready(function(){
 		jQuery(this).addClass('youtube').addClass('group1');
 		var url = jQuery(this).attr('href');
 		var videoid = url.match(/(?:https?:\/{2})?(?:w{3}\.)?youtu(?:be)?\.(?:com|be)(?:\/watch\?v=|\/)([^\s&]+)/);
-        jQuery(this).attr('href','https://www.youtube.com/embed/'+videoid[1]);
+		if(videoid) {
+			jQuery(this).attr('href','https://www.youtube.com/embed/'+videoid[1]);
+		}
 	});
 	
 
