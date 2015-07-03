@@ -1,7 +1,7 @@
 === Lightbox ===
 Contributors: Huge-IT
 Donate link: http://huge-it.com/lightbox/
-Tags: lightbox, Lightbox slider, lightview, overlay, popup, popup image, popup images, colorbox, lightbox popup, lightbox pop, on click popup, onclick popup, popup box, style, style lightbox, fancybox, wordpress image lightbox, wordpress lightbox, wordpress popup, popup photo, photo, shadowbox, img, image, thickbox, open image, video lightbox, page, post, vimeo, youtube, wordpress youtube, free, highslide, popups, images, responsive lightbox, WP Lightbox, pop-up, light box, pics, exit lightbox, lightbox youtube, lightbox photo, image popup, Jquery lightbox, jquery popup, video popup, optin popup, prettyphoto lightbox, quick popup, slimbox, simple popup, custom popup, slideshow lightbox, Responsive Popup, popup, popup lightbox, popup video, popup window, plugin for gallery, display, photos, lightbox gallery, gallery lightbox, image lightbox,
+Tags: lightbox, Lightbox slider, lightview, overlay, popup, popup image, popup images, colorbox, lightbox popup, lightbox pop, on click popup, onclick popup, popup box, style, style lightbox, fancybox, wordpress image lightbox, wordpress lightbox, wordpress popup, popup photo, photo, shadowbox, img, image, thickbox, open image, video lightbox, page, post, vimeo, youtube, wordpress youtube, free, highslide, popups, images, responsive lightbox, WP Lightbox, pop-up, light box, exit lightbox, lightbox youtube, lightbox photo, image popup, Jquery lightbox, jquery popup, video popup, prettyphoto lightbox, quick popup, slimbox, simple popup, custom popup, slideshow lightbox, Responsive Popup, popup, popup lightbox, popup video, popup window, plugin for gallery, display, photos, lightbox gallery, gallery lightbox, image lightbox,
 Requires at least: 3.0.1
 Tested up to: 4.2.2
 Stable tag: 1.5.0
@@ -140,7 +140,7 @@ If you use multi site (have number of sites) when you install a plugin in main s
 *  Bug fixed in Lightbox.
 
 = 1.3.3 =
-*  Lightbox size fixe bag fixed.
+*  Lightbox size fixe bug fixed.
 
 = 1.3.2 =
 *  Add some options in Lightbox.
