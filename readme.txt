@@ -3,7 +3,7 @@ Contributors: Huge-IT
 Donate link: http://huge-it.com/lightbox/
 Tags: lightbox, Lightbox slider, lightview, overlay, popup, popup image, popup images, colorbox, lightbox popup, lightbox pop, on click popup, onclick popup, popup box, style lightbox, fancybox, wordpress image lightbox, wordpress lightbox, wordpress popup, popup photo, photo, shadowbox, img, image, thickbox, open image, video lightbox, vimeo, youtube, wordpress youtube, popups, responsive lightbox, WP Lightbox, pop-up, light box, exit lightbox, lightbox youtube, lightbox photo, image popup, jquery popup, video popup, prettyphoto lightbox, quick popup, slimbox, simple popup, custom popup, slideshow lightbox, Responsive Popup, popup, popup lightbox, popup video, popup window, plugin for gallery, display, photos, lightbox gallery, gallery lightbox, image lightbox, pictures, picture, image, images, img, png, jpg, video, popup bar,
 Requires at least: 3.0.1
-Tested up to: 4.2.3
+Tested up to: 4.2.4
 Stable tag: 1.5.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
