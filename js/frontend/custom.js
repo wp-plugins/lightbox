@@ -1,10 +1,21 @@
 jQuery(document).ready(function(){
-	jQuery("body a[href$='.jpg'], body a[href$='.jpeg'], body a[href$='.png'], body a[href$='.gif']").addClass('group1');
+	
+	/***<select case-insensitive a tags>***/
+	
+	var img = jQuery('a').filter(function() {
+		var href = jQuery(this).attr('href').toLowerCase();
+		return href.substr(-4) == '.jpg' || href.substr(-5) == '.jpeg' ||  href.substr(-4) == '.png' || href.substr(-4) == '.gif';
+	});
+
+	img.addClass('group1');	
+
+	/***<select case-insensitive a tags>***/
+	
         jQuery("body a[class*='catalog_group']").removeClass('group1');
         jQuery("body a[class*='catalog_slider_group1']").removeClass('group1');
 	
 	
-	jQuery('a[href*="youtube.com"],a[href*="youtu.bebe"]').not('.huge_it_gallery_item').not('.huge_it_videogallery_item').not('.huge_it_portfolio_item').each(function(){
+	jQuery('a[href*="youtube.com"],a[href*="youtu.bebe"]').not('a[href*="/channel/"]').not('.huge_it_gallery_item').not('.huge_it_videogallery_item').not('.huge_it_portfolio_item').each(function(){
 		jQuery(this).addClass('youtube').addClass('group1');
 		var url = jQuery(this).attr('href');
 		var videoid = url.match(/(?:https?:\/{2})?(?:w{3}\.)?youtu(?:be)?\.(?:com|be)(?:\/watch\?v=|\/)([^\s&]+)/);
