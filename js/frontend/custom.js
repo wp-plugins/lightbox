@@ -3,8 +3,15 @@ jQuery(document).ready(function(){
 	/***<select case-insensitive a tags>***/
 	
 	var img = jQuery('a').filter(function() {
-		var href = jQuery(this).attr('href').toLowerCase();
-		return href.substr(-4) == '.jpg' || href.substr(-5) == '.jpeg' ||  href.substr(-4) == '.png' || href.substr(-4) == '.gif';
+		
+		var href = jQuery(this).attr('href');
+		
+		if(typeof href !=='undefined') {
+			href = href.toLowerCase();
+			
+			return href.substr(-4) == '.jpg' || href.substr(-5) == '.jpeg' ||  href.substr(-4) == '.png' || href.substr(-4) == '.gif';
+		
+		}
 	});
 
 	img.addClass('group1');	
