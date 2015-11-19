@@ -87,6 +87,11 @@ If you use multi site (have number of sites) when you install a plugin in main s
 2) go to the other sites and activate it there one by one
 3) after all will be activated, go back to your main site and activate it
 
+**How to install the PRO version of Lightbox?**
+In order to install pro version of the plugin, simply follow these steps: delete your free version >	install the zip file | Plugins > add new > upload plugin >	clean your cache files |ctrl+f5|.
+
+Don’t be afraid of deleting free version, because you will NOT lose your created portfolios.
+
 ### If you think, that you found a bug in our [WordPress Lightbox](http://huge-it.com/lightbox/) plugin or have any question contact us at [info@huge-it.com](mailto:info@huge-it.com).
 
 == Changelog ==
