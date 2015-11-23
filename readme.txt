@@ -42,8 +42,9 @@ Now you can set your lightbox options, images and use our lightbox.
 == Screenshots ==
     
 1.  WordPress Lightbox - Demo image
-2.  WordPress Lightbox - Demo video
-3.  WordPress Lightbox - Demo Admin
+2.  WordPress Lightbox - Demo Vimeo
+3.  WordPress Lightbox - Demo Youtube
+4.  WordPress Lightbox - Demo Admin
 
 == Frequently Asked Questions ==
 
@@ -71,8 +72,7 @@ Set “show the title” from Lightbox Options
 
 
 **I have already purchased Multi Site version, how do I upgrade it to Developer version, without buying it again?**
-If you have any pro version of our products and want to upgrade it, you do not need to buy the new one again, you only need to pay the difference price.
-For example, if you have personal version and need to upgrade to Multi Site, just buy one more personal, and contact us by info@huge-it.com, send the receipt and we will send Multi Site version, from Multi Site to Developer, just buy one personal, and ask us for Developer version.
+If you have any pro version our portfolio gallery plugin of our products and want to upgrade it, you do not need to buy the new portfolio gallery once again, you only need to pay the difference price. For that simply contact info@huge-it.com or our online chat and we will help you to pay the difference.
 
 **I’ve bought the commercial license,  installed the file but the Plugin seems to be still in free version, what to do?**
 After installation of pro version, in General Options all your changes will be saved!
