@@ -1,10 +1,10 @@
 === Lightbox ===
 Contributors: Huge-IT
 Donate link: http://huge-it.com/lightbox/
-Tags: lightbox, Lightbox slider,slideshow, image rotator, lightview, popup, popup image, popup images, colorbox, lightbox popup, lightbox pop, on click popup, onclick popup, popup box, style lightbox, fancybox, wordpress image lightbox, wordpress lightbox, wordpress popup, popup photo, photo, shadowbox, thickbox, open image, video lightbox, vimeo, youtube, wordpress youtube, popups, responsive lightbox, WP Lightbox, pop-up, light box, exit lightbox, lightbox youtube, youtube player, vimeo link, vimeo player, lightbox photo, image popup, jquery popup, video popup, quick popup, slimbox, simple popup, custom popup, slideshow lightbox, Responsive Popup, popup, popup lightbox, popup video, popup window, plugin for gallery, display, photos, lightbox gallery, gallery lightbox, image lightbox,popup bar, lightbox image, wordpress slideshow lightbox, post,
+Tags: lightbox, Lightbox slider,slideshow, image rotator, lightview, popup, popup image, popup images, colorbox, lightbox popup, lightbox pop, on click popup, onclick popup, popup box, style lightbox, fancybox, wordpress image lightbox, wordpress lightbox, wordpress popup, popup photo, photo, shadowbox, thickbox, open image, video lightbox, vimeo, youtube, wordpress youtube, popups, responsive lightbox, WP Lightbox, pop-up, light box, exit lightbox, lightbox youtube, youtube player, vimeo link, vimeo player, lightbox photo, image popup, jquery popup, video popup, quick popup, slimbox, simple popup, custom popup, slideshow lightbox, Responsive Popup, popup, popup lightbox, popup video, popup window, plugin for gallery, display, photos, lightbox gallery, gallery lightbox, image lightbox,popup bar, lightbox image, wordpress slideshow lightbox,
 Requires at least: 3.0.1
 Tested up to: 4.3.1
-Stable tag: 1.5.6
+Stable tag: 1.5.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -42,9 +42,10 @@ Now you can set your lightbox options, images and use our lightbox.
 == Screenshots ==
     
 1.  WordPress Lightbox - Demo image
-2.  WordPress Lightbox - Demo Vimeo
-3.  WordPress Lightbox - Demo Youtube
-4.  WordPress Lightbox - Demo Admin
+2.  WordPress Lightbox - Demo image
+3.  WordPress Lightbox - Demo Vimeo
+4.  WordPress Lightbox - Demo Youtube
+5.  WordPress Lightbox - Demo Admin
 
 == Frequently Asked Questions ==
 
@@ -95,6 +96,9 @@ Don’t be afraid of deleting free version, because you will NOT lose your creat
 ### If you think, that you found a bug in our [WordPress Lightbox](http://huge-it.com/lightbox/) plugin or have any question contact us at [info@huge-it.com](mailto:info@huge-it.com).
 
 == Changelog ==
+
+= 1.5.7 =
+*  Youtube channel popup Bug fixed.
 
 = 1.5.6 =
 *  Bug fixed in Lightbox.
@@ -184,7 +188,6 @@ In your post click -insert media and -insert from URL. add the link, give a titl
 ### Step 4. General Options of Lightbox
 
 This section will allow to make changes of the Lightbox’s settings. Most of the view options allow styling and multi coloring.
-
 
 
 *  Lightbox style. choose the style of your popup.

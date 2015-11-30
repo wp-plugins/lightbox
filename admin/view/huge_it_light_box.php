@@ -366,6 +366,70 @@
 				<input type="hidden" value="false" name="params[light_box_closebutton]" />
 				<input type="checkbox" id="light_box_closebutton"  <?php if($hugeit_lightbox_values['light_box_closebutton']  == 'true'){ echo 'checked="checked"'; } ?>  name="params[light_box_closebutton]" value="true" />
 			</div>
+                        <div class="options-block alert-for-free" style="margin-top:0px;height:auto;width:100%;">
+		<h3>Positioning<span class="for-pro-user"><strong> (Pro)</strong></span></h3>
+		
+		<div class="has-background">
+                        <label for="light_box_fixed">Fixed position
+                            <div class="help">?
+                                <div class="help-block">
+                                    <span class="pnt"></span>
+                                    <p>If �true� the popup does not change it�s position while scrolling up or down.</p>
+                                </div>
+                            </div>
+                        </label>
+			<input type="hidden" value="false" name="params[light_box_fixed]" />
+			<input type="checkbox" id="light_box_fixed"  <?php if($hugeit_lightbox_values['light_box_fixed']  == 'true'){ echo 'checked="checked"'; } ?>  name="params[light_box_fixed]" value="true" />
+		</div>
+		<div class="has-height">
+                        <label for="">Popup position
+                            <div class="help">?
+                                <div class="help-block">
+                                    <span class="pnt"></span>
+                                    <p>Set the position of popup.</p>
+                                </div>
+                            </div>
+                        </label>
+			<div>
+			<table class="bws_position_table">
+				<tbody>
+				  <tr>
+					<td><input type="radio" value="1" id="slideshow_title_top-left" name="params[slider_title_position]" <?php if($hugeit_lightbox_values['slider_title_position'] == '1'){ echo 'checked="checked"'; } ?> /></td>
+					<td><input type="radio" value="2" id="slideshow_title_top-center" name="params[slider_title_position]" <?php if($hugeit_lightbox_values['slider_title_position'] == '2'){ echo 'checked="checked"'; } ?> /></td>
+					<td><input type="radio" value="3" id="slideshow_title_top-right" name="params[slider_title_position]"  <?php if($hugeit_lightbox_values['slider_title_position'] == '3'){ echo 'checked="checked"'; } ?> /></td>
+				  </tr>
+				  <tr>
+					<td><input type="radio" value="4" id="slideshow_title_middle-left" name="params[slider_title_position]" <?php if($hugeit_lightbox_values['slider_title_position'] == '4'){ echo 'checked="checked"'; } ?> /></td>
+					<td><input type="radio" value="5" id="slideshow_title_middle-center" name="params[slider_title_position]" <?php if($hugeit_lightbox_values['slider_title_position'] == '5'){ echo 'checked="checked"'; } ?> /></td>
+					<td><input type="radio" value="6" id="slideshow_title_middle-right" name="params[slider_title_position]" <?php if($hugeit_lightbox_values['slider_title_position'] == '6'){ echo 'checked="checked"'; } ?> /></td>
+				  </tr>
+				  <tr>
+					<td><input type="radio" value="7" id="slideshow_title_bottom-left" name="params[slider_title_position]" <?php if($hugeit_lightbox_values['slider_title_position'] == '7'){ echo 'checked="checked"'; } ?> /></td>
+					<td><input type="radio" value="8" id="slideshow_title_bottom-center" name="params[slider_title_position]" <?php if($hugeit_lightbox_values['slider_title_position'] == '8'){ echo 'checked="checked"'; } ?> /></td>
+					<td><input type="radio" value="9" id="slideshow_title_bottom-right" name="params[slider_title_position]" <?php if($hugeit_lightbox_values['slider_title_position'] == '9'){ echo 'checked="checked"'; } ?> /></td>
+				  </tr>
+				</tbody>	
+			</table>
+			</div>
+		</div>
+		<!--<div class="has-background">
+			<label for="light_box_reposition">Light box reposition<span class="help"></span></label>
+			<select id="light_box_reposition" name="params[light_box_reposition]">	
+				<option <?php if($hugeit_lightbox_values['light_box_reposition'] == 'true'){ echo 'selected="selected"'; } ?> value="true">True</option>
+				<option <?php if($hugeit_lightbox_values['light_box_reposition'] == 'false'){ echo 'selected="selected"'; } ?> value="false">False</option>
+			</select>
+		</div>-->
+			
+		<!--
+		<div class="has-background">
+			<label for="light_box_size">Light box size<span class="help"></span></label>
+			<input type="text" name="params[light_box_size]" id="light_box_size" value="<?php echo $hugeit_lightbox_values[light_box_size]; ?>" class="text">
+			<span>px</span>
+		</div>
+		 -->
+                 
+	</div>
+                        
 	</div>
 	<!--<div class="options-block">
 		<h3>Buttons Texts</h3>
@@ -546,68 +610,92 @@
 			<input type="text" name="params[light_box_slideshowstop]" id="light_box_slideshowstop" value="<?php echo $hugeit_lightbox_values[light_box_slideshowstop]; ?>" class="text">
 		</div>
 	</div>
-	<div class="options-block alert-for-free" style="margin-top:0px;">
-		<h3>Positioning<span class="for-pro-user"><strong> (Pro)</strong></span></h3>
-		
-		<div class="has-background">
-                        <label for="light_box_fixed">Fixed position
-                            <div class="help">?
-                                <div class="help-block">
-                                    <span class="pnt"></span>
-                                    <p>If �true� the popup does not change it�s position while scrolling up or down.</p>
+        <div class="options-block alert-for-free options-small-blocks" >
+                            <h3>Lightbox Watermark styles<span class="for-pro-user"><strong> (Pro)</strong></span></h3>
+                            <div class="has-background">
+                                                <label for="light_box_title">Show Watermarket Image
+                                                    <div class="help">?
+                                                        <div class="help-block">
+                                                            <span class="pnt"></span>
+                                                            <p>Enable watermark on lightbox</p>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                                <input type="hidden" value="false" name="params[watermarket_image]" />
+                                                <input type="checkbox" id="watermarket_image"  <?php if($hugeit_lightbox_values['watermarket_image']  == 'true'){ echo 'checked="checked"'; } ?>  name="params[watermarket_image]" value="true" />
+                                        </div>
+                            <div class="has-height">
+                                <label for="">Lightbox Watermark position
+                                    <div class="help">?
+                                        <div class="help-block">
+                                            <span class="pnt"></span>
+                                            <p>Set the position of lightbox watermark.</p>
+                                        </div>
+                                    </div>
+                                </label>
+                                    <table class="bws_position_table">
+                                            <tbody>
+                                              <tr>
+                                                    <td><input type="radio" value="1" id="lightbox_watermark_position-left" name="params[lightbox_watermark_position]" <?php if($hugeit_lightbox_values['lightbox_watermark_position'] == '1'){ echo 'checked="checked"'; } ?> /></td>
+                                                    <td><input type="radio" value="2" id="lightbox_watermark_position-center" name="params[lightbox_watermark_position]" <?php if($hugeit_lightbox_values['lightbox_watermark_position'] == '2'){ echo 'checked="checked"'; } ?> /></td>
+                                                    <td><input type="radio" value="3" id="lightbox_watermark_position-right" name="params[lightbox_watermark_position]"  <?php if($hugeit_lightbox_values['lightbox_watermark_position'] == '3'){ echo 'checked="checked"'; } ?> /></td>
+                                              </tr>
+                                              <tr>
+                                                    <td><input type="radio" value="4" id="lightbox_watermark_position-left" name="params[lightbox_watermark_position]" <?php if($hugeit_lightbox_values['lightbox_watermark_position'] == '4'){ echo 'checked="checked"'; } ?> /></td>
+                                                    <td style="visibility: hidden;"><input type="radio" value="4" id="lightbox_watermark_position-left" name="params[lightbox_watermark_position]" <?php if($hugeit_lightbox_values['lightbox_watermark_position'] == '5'){ echo 'checked="checked"'; } ?> /></td>
+                                                    <td><input type="radio" value="6" id="lightbox_watermark_position-right" name="params[lightbox_watermark_position]" <?php if($hugeit_lightbox_values['lightbox_watermark_position'] == '6'){ echo 'checked="checked"'; } ?> /></td>
+                                              </tr>
+                                              <tr>
+                                                    <td><input type="radio" value="7" id="lightbox_watermark_position-left" name="params[lightbox_watermark_position]" <?php if($hugeit_lightbox_values['lightbox_watermark_position'] == '7'){ echo 'checked="checked"'; } ?> /></td>
+                                                    <td><input type="radio" value="8" id="lightbox_watermark_position-center" name="params[lightbox_watermark_position]" <?php if($hugeit_lightbox_values['lightbox_watermark_position'] == '8'){ echo 'checked="checked"'; } ?> /></td>
+                                                    <td><input type="radio" value="9" id="lightbox_watermark_position-right" name="params[lightbox_watermark_position]" <?php if($hugeit_lightbox_values['lightbox_watermark_position'] == '9'){ echo 'checked="checked"'; } ?> /></td>
+                                              </tr>
+                                            </tbody>	
+                                    </table>
+                            </div>
+
+                            <div class="has-background">
+                                <label for="watermark_width">Lightbox Watermark width
+                                            <div class="help">?
+                                                <div class="help-block">
+                                                    <span class="pnt"></span>
+                                                    <p>Set the widtht of Lightbox watermark.</p>
+                                                </div>
+                                            </div>
+                                        </label>
+                                <input type="number" name="params[watermark_width]" id="watermark_width" value="<?php echo $hugeit_lightbox_values['watermark_width']; ?>" class="text">
+                                <span>px</span>
+                            </div>
+                            <div>
+                                <label for="watermark_transparency">Lightbox Watermark transparency
+                                    <div class="help">?
+                                        <div class="help-block">
+                                            <span class="pnt"></span>
+                                            <p>Set the transparency of Lightbox Watermark.</p>
+                                        </div>
+                                    </div>
+                                </label>
+                                <div class="slider-container">
+                                    <input name="params[watermark_transparency]" id="watermark_transparency" data-slider-highlight="true"  data-slider-values="0,10,20,30,40,50,60,70,80,90,100" type="text" data-slider="true" value="<?php echo $hugeit_lightbox_values['watermark_transparency']; ?>" />
+                                    <span><?php echo $hugeit_lightbox_values['watermark_transparency']; ?>%</span>
                                 </div>
                             </div>
-                        </label>
-			<input type="hidden" value="false" name="params[light_box_fixed]" />
-			<input type="checkbox" id="light_box_fixed"  <?php if($hugeit_lightbox_values['light_box_fixed']  == 'true'){ echo 'checked="checked"'; } ?>  name="params[light_box_fixed]" value="true" />
-		</div>
-		<div class="has-height">
-                        <label for="">Popup position
-                            <div class="help">?
-                                <div class="help-block">
-                                    <span class="pnt"></span>
-                                    <p>Set the position of popup.</p>
-                                </div>
-                            </div>
-                        </label>
-			<div>
-			<table class="bws_position_table">
-				<tbody>
-				  <tr>
-					<td><input type="radio" value="1" id="slideshow_title_top-left" name="params[slider_title_position]" <?php if($hugeit_lightbox_values['slider_title_position'] == '1'){ echo 'checked="checked"'; } ?> /></td>
-					<td><input type="radio" value="2" id="slideshow_title_top-center" name="params[slider_title_position]" <?php if($hugeit_lightbox_values['slider_title_position'] == '2'){ echo 'checked="checked"'; } ?> /></td>
-					<td><input type="radio" value="3" id="slideshow_title_top-right" name="params[slider_title_position]"  <?php if($hugeit_lightbox_values['slider_title_position'] == '3'){ echo 'checked="checked"'; } ?> /></td>
-				  </tr>
-				  <tr>
-					<td><input type="radio" value="4" id="slideshow_title_middle-left" name="params[slider_title_position]" <?php if($hugeit_lightbox_values['slider_title_position'] == '4'){ echo 'checked="checked"'; } ?> /></td>
-					<td><input type="radio" value="5" id="slideshow_title_middle-center" name="params[slider_title_position]" <?php if($hugeit_lightbox_values['slider_title_position'] == '5'){ echo 'checked="checked"'; } ?> /></td>
-					<td><input type="radio" value="6" id="slideshow_title_middle-right" name="params[slider_title_position]" <?php if($hugeit_lightbox_values['slider_title_position'] == '6'){ echo 'checked="checked"'; } ?> /></td>
-				  </tr>
-				  <tr>
-					<td><input type="radio" value="7" id="slideshow_title_bottom-left" name="params[slider_title_position]" <?php if($hugeit_lightbox_values['slider_title_position'] == '7'){ echo 'checked="checked"'; } ?> /></td>
-					<td><input type="radio" value="8" id="slideshow_title_bottom-center" name="params[slider_title_position]" <?php if($hugeit_lightbox_values['slider_title_position'] == '8'){ echo 'checked="checked"'; } ?> /></td>
-					<td><input type="radio" value="9" id="slideshow_title_bottom-right" name="params[slider_title_position]" <?php if($hugeit_lightbox_values['slider_title_position'] == '9'){ echo 'checked="checked"'; } ?> /></td>
-				  </tr>
-				</tbody>	
-			</table>
-			</div>
-		</div>
-		<!--<div class="has-background">
-			<label for="light_box_reposition">Light box reposition<span class="help"></span></label>
-			<select id="light_box_reposition" name="params[light_box_reposition]">	
-				<option <?php if($hugeit_lightbox_values['light_box_reposition'] == 'true'){ echo 'selected="selected"'; } ?> value="true">True</option>
-				<option <?php if($hugeit_lightbox_values['light_box_reposition'] == 'false'){ echo 'selected="selected"'; } ?> value="false">False</option>
-			</select>
-		</div>-->
-			
-		<!--
-		<div class="has-background">
-			<label for="light_box_size">Light box size<span class="help"></span></label>
-			<input type="text" name="params[light_box_size]" id="light_box_size" value="<?php echo $hugeit_lightbox_values[light_box_size]; ?>" class="text">
-			<span>px</span>
-		</div>
-		 -->
-	</div>
+                            <div class="has-background" style="height:auto;">
+                                <label for="watermark_image_btn">Select Watermark Image
+                                            <div class="help">?
+                                                <div class="help-block">
+                                                    <span class="pnt"></span>
+                                                    <p>Set the image of Lightbox watermark.</p>
+                                                </div>
+                                            </div>
+                                        </label>
+                                <img  src="<?php echo plugins_url().'/lightbox/images/No-image-found.jpg'; ?>" id="watermark_image" style="width:120px;height:auto;">
+                                <input type="button" class="button" style="margin-left: 63%;width: auto;display: inline-block;" class="wp-media-buttons-icon"  id="watermark_image_btn" value='Upload Image'>
+                                <input type="hidden" id="img_watermark_hidden" name="params[watermark_img_src]" value="<?php echo $hugeit_lightbox_values['watermark_img_src']; ?>">
+                        </div>
+        </form>
+</div>
+	
 	</form>
 </div>
 <div id="post-body-heading" class="post-body-line">
